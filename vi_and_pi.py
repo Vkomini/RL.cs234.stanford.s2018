@@ -236,18 +236,51 @@ def render_single(env, policy):
         episode_reward += rew
         if done:
             break
+        raw_input()
     assert done
     env.render();
     print "Episode reward: %f" % episode_reward
 
 
+def print_policy(policy):
+	a2str_dict = {
+		0: "<",
+		1: "v",
+		2: ">",
+		3: "^"
+
+	}
+	policy_str_lst = np.asarray(
+		map(lambda x: a2str_dict[x], policy),
+		dtype='str'
+		)
+	print(policy_str_lst.reshape(4, 4)) 
+
 # Feel free to run your own debug code in main!
 # Play around with these hyperparameters.
 if __name__ == "__main__":
     env = gym.make("Deterministic-4x4-FrozenLake-v0")
-    print env.__doc__
+    # print env.__doc__
     print "Here is an example of state, action, reward, and next state"
-    example(env)
+    # example(env)
     P_test = env.P
     V_vi, p_vi = value_iteration(env.P, env.nS, env.nA, gamma=0.9, max_iteration=20, tol=1e-3)
     V_pi, p_pi = policy_iteration(env.P, env.nS, env.nA, gamma=0.9, max_iteration=20, tol=1e-3)
+
+    print_policy(p_vi)
+    print_policy(p_pi)
+    # render_single(env, p_vi)
+    # render_single(env, p_pi)
+    print("stochastic")
+    env = gym.make("Stochastic-4x4-FrozenLake-v0")
+    V_vi, p_vi = value_iteration(env.P, env.nS, env.nA, gamma=0.9, max_iteration=1000000, tol=1e-6)
+    V_pi, p_pi = policy_iteration(env.P, env.nS, env.nA, gamma=0.9, max_iteration=1000000, tol=1e-6)
+    
+    print_policy(p_vi)
+    print_policy(p_pi)
+    # print(V_vi.reshape(4, 4))
+    # print(V_pi.reshape(4, 4))
+
+    # render_single(env, p_vi)
+    # render_single(env, p_pi)
+
