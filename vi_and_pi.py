@@ -139,7 +139,7 @@ def policy_iteration(P, nS, nA, gamma=0.9, max_iteration=20, tol=1e-3):
         iter_counter += 1
         del policy
         policy = np.copy(policy_next)
-    V = policy_evaluation(P, nS, nA, policy_new, gamma=0.9, max_iteration=max_iteration, tol=tol)
+    V = policy_evaluation(P, nS, nA, policy_next, gamma=0.9, max_iteration=max_iteration, tol=tol)
     ############################
     return V, policy_next
 
