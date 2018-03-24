@@ -1,6 +1,6 @@
-# cs234n stanford RL HW1 
+# cs234n stanford RL HW2 Frozen Lake 
 ## Virtual env
-cd assignment1
+cd cs234_hw2_FL
 sudo pip install virtualenv      # This may already be installed
 virtualenv .env                  # Create a virtual environment
 source .env/bin/activate         # Activate the virtual environment
