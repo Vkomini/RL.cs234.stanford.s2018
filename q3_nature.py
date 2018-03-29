@@ -16,6 +16,7 @@ class NatureQN(Linear):
     https://storage.googleapis.com/deepmind-data/assets/papers/DeepMindNature14236Paper.pdf
     https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
     """
+
     def get_q_values_op(self, state, scope, reuse=False):
         """
         Returns Q values for all actions
@@ -53,7 +54,7 @@ class NatureQN(Linear):
 
         """
         ##############################################################
-        ################ YOUR CODE HERE - 10-15 lines ################ 
+        ################ YOUR CODE HERE - 10-15 lines ################
 
         pass
 
@@ -69,12 +70,12 @@ if __name__ == '__main__':
     env = EnvTest((80, 80, 1))
 
     # exploration strategy
-    exp_schedule = LinearExploration(env, config.eps_begin, 
-            config.eps_end, config.eps_nsteps)
+    exp_schedule = LinearExploration(env, config.eps_begin,
+                                     config.eps_end, config.eps_nsteps)
 
     # learning rate schedule
-    lr_schedule  = LinearSchedule(config.lr_begin, config.lr_end,
-            config.lr_nsteps)
+    lr_schedule = LinearSchedule(config.lr_begin, config.lr_end,
+                                 config.lr_nsteps)
 
     # train model
     model = NatureQN(env, config)

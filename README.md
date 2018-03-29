@@ -2,7 +2,7 @@
 
 ## Install
 
-First, install gym and atari environments. You may need to install other dependencies depending on your system.
+First, install gym and atari environments. You may need to install other dependencies depending on your system. (For macOS X `brew install cmake`)
 
 ```
 pip install gym

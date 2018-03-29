@@ -3,6 +3,7 @@ from utils.test_env import EnvTest
 
 
 class LinearSchedule(object):
+
     def __init__(self, eps_begin, eps_end, nsteps):
         """
         Args:
@@ -10,11 +11,10 @@ class LinearSchedule(object):
             eps_end: end exploration
             nsteps: number of steps between the two values of eps
         """
-        self.epsilon        = eps_begin
-        self.eps_begin      = eps_begin
-        self.eps_end        = eps_end
-        self.nsteps         = nsteps
-
+        self.epsilon = float(eps_begin)
+        self.eps_begin = float(eps_begin)
+        self.eps_end = float(eps_end)
+        self.nsteps = float(nsteps)
 
     def update(self, t):
         """
@@ -33,15 +33,21 @@ class LinearSchedule(object):
               self.epsilon should never go under self.eps_end
         """
         ##############################################################
-        ################ YOUR CODE HERE - 3-4 lines ################## 
-
-        pass
-
+        ################ YOUR CODE HERE - 3-4 lines ##################
+        new_epsilon = self.eps_begin + t * \
+            (self.eps_end - self.eps_begin) / self.nsteps
+        if (self.eps_end - self.eps_begin) < 0 and new_epsilon < self.eps_end:
+            self.epsilon = self.eps_end
+        elif (self.eps_end - self.eps_begin) > 0 and new_epsilon > self.eps_end:
+            self.epsilon = self.eps_end
+        else:
+            self.epsilon = new_epsilon
         ##############################################################
         ######################## END YOUR CODE ############## ########
 
 
 class LinearExploration(LinearSchedule):
+
     def __init__(self, env, eps_begin, eps_end, nsteps):
         """
         Args:
@@ -52,7 +58,6 @@ class LinearExploration(LinearSchedule):
         """
         self.env = env
         super(LinearExploration, self).__init__(eps_begin, eps_end, nsteps)
-
 
     def get_action(self, best_action):
         """
@@ -77,17 +82,20 @@ class LinearExploration(LinearSchedule):
         ##############################################################
         ################ YOUR CODE HERE - 4-5 lines ##################
 
-        pass
+        a = np.random.choice(
+            [self.env.action_space.sample(), best_action],
+            1,
+            p=[self.epsilon, 1. - self.epsilon])
 
+        return a
         ##############################################################
         ######################## END YOUR CODE #######################
-
 
 
 def test1():
     env = EnvTest((5, 5, 1))
     exp_strat = LinearExploration(env, 1, 0, 10)
-    
+
     found_diff = False
     for i in range(10):
         rnd_act = exp_strat.get_action(0)

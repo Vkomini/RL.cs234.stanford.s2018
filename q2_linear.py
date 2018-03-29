@@ -13,6 +13,7 @@ class Linear(DQN):
     """
     Implement Fully Connected with Tensorflow
     """
+
     def add_placeholders_op(self):
         """
         Adds placeholders to the graph
@@ -54,12 +55,23 @@ class Linear(DQN):
         """
         ##############################################################
         ################YOUR CODE HERE (6-15 lines) ##################
-
-        pass
-
+        img_height, img_width, nchannels = state_shape
+        self.s = tf.placeholder(
+            tf.uint8,
+            shape=(None, img_height, img_width,
+                   nchannels * config.state_history)
+        )
+        self.a = tf.placeholder(tf.uint8, shape=None)
+        self.r = tf.placeholder(tf.float32, shape=None)
+        self.sp = tf.placeholder(
+            tf.uint8,
+            shape=(None, img_height, img_width,
+                   nchannels * config.state_history)
+        )
+        self.done_mask = tf.placeholder(tf.float32, shape=None)
+        self.lr = tf.placeholder(tf.float32, shape=())
         ##############################################################
         ######################## END YOUR CODE #######################
-
 
     def get_q_values_op(self, state, scope, reuse=False):
         """
@@ -89,26 +101,52 @@ class Linear(DQN):
 
         HINT: you may find tensorflow.contrib.layers useful (imported)
               make sure to understand the use of the scope param
-              make sure to flatten the state input (see tensorflow.contrib.layers.flatten())    
+              make sure to flatten the state input (see tensorflow.contrib.layers.flatten())
 
               you can use any other methods from tensorflow
               you are not allowed to import extra packages (like keras,
               lasagne, cafe, etc.)
         """
         ##############################################################
-        ################ YOUR CODE HERE - 2-3 lines ################## 
-        
-        pass
+        ################ YOUR CODE HERE - 2-3 lines ##################
+        state_shape = list(self.env.observation_space.shape)
+        print(" -- state_shape: " + str(state_shape))
+        _, img_height, img_width, nchannels = state.shape
+        state_flat_dim = img_height * img_width * nchannels
+        print(" -- state.shape: " + str(state.shape))
+        if scope == "target_q":
+            with tf.variable_scope(scope, reuse=reuse):
+                batch_state = tf.reshape(state, [-1, state_flat_dim])
+                W = tf.get_variable(
+                    "weights",
+                    shape=(state_flat_dim, num_actions)
+                )
+                tf.add_to_collection("target_q", W)
+                b = tf.get_variable("bias", shape=(num_actions))
+                tf.add_to_collection("target_q", b)
+                out = tf.matmul(batch_state, W) + b
+        elif scope == "q":
+            with tf.variable_scope(scope, reuse=reuse):
+                batch_state = tf.reshape(state, [-1, state_flat_dim])
+                W = tf.get_variable(
+                    "weights",
+                    shape=(state_flat_dim, num_actions))
+                tf.add_to_collection("q", W)
+                b = tf.get_variable("bias", shape=(num_actions))
+                tf.add_to_collection("q", b)
+                out = tf.matmul(batch_state, W) + b
+        else:
+            raise ValueError('scope value is wrong')
+        # layers.fully_connected(batch_state, num_actions, activation_fn=None)
 
         ##############################################################
         ######################## END YOUR CODE #######################
 
         return out
 
-
     def add_update_target_op(self, q_scope, target_q_scope):
         """
-        update_target_op will be called periodically 
+        update_target_op will be called periodically
         to copy Q network weights to target Q network
 
         Remember that in DQN, we maintain two identical Q networks with
@@ -118,12 +156,12 @@ class Linear(DQN):
         in tensorflow, read the docs
         https://www.tensorflow.org/programmers_guide/variable_scope
 
-        Periodically, we need to update all the weights of the Q network 
+        Periodically, we need to update all the weights of the Q network
         and assign them with the values from the regular network. Thus,
-        what we need to do is to build a tf op, that, when called, will 
-        assign all variables in the target network scope with the values of 
+        what we need to do is to build a tf op, that, when called, will
+        assign all variables in the target network scope with the values of
         the corresponding variables of the regular network scope.
-    
+
         Args:
             q_scope: (string) name of the scope of variables for q
             target_q_scope: (string) name of the scope of variables
@@ -144,12 +182,21 @@ class Linear(DQN):
         """
         ##############################################################
         ################### YOUR CODE HERE - 5-10 lines #############
-        
-        pass
+        # collect variables and assign ops
+        # tensorflow guarantees the order of variables in collections
+        # is the same as they were added to collections
+        target_q_var_lst = tf.get_collection(target_q_scope)
+        q_var_lst = tf.get_collection(q_scope)
+        update_op_lst = []
+        for idx, target_q_var in enumerate(target_q_var_lst):
+            op = target_q_var.assign(q_var_lst[idx])
+            update_op_lst.append(op.op)
+        update_op_grouped = tf.group(*update_op_lst)
+
+        self.update_target_op = update_op_grouped
 
         ##############################################################
         ######################## END YOUR CODE #######################
-
 
     def add_loss_op(self, q, target_q):
         """
@@ -167,7 +214,7 @@ class Linear(DQN):
         TODO: The loss for an example is defined as:
                 Q_samp(s) = r if done
                           = r + gamma * max_a' Q_target(s', a')
-                loss = (Q_samp(s) - Q(s, a))^2 
+                loss = (Q_samp(s) - Q(s, a))^2
 
               You need to compute the average of the loss over the minibatch
               and store the resulting scalar into self.loss
@@ -183,15 +230,46 @@ class Linear(DQN):
                     - ...
 
         (be sure that you set self.loss)
+        obs_batch: np.array
+            Array of shape
+            (batch_size, img_h, img_w, img_c * frame_history_len)
+            and dtype np.uint8
+        act_batch: np.array
+            Array of shape (batch_size,) and dtype np.int32
+        rew_batch: np.array
+            Array of shape (batch_size,) and dtype np.float32
+        next_obs_batch: np.array
+            Array of shape
+            (batch_size, img_h, img_w, img_c * frame_history_len)
+            and dtype np.uint8
+        done_mask: np.array
+            Array of shape (batch_size,) and dtype np.float32
+
         """
         ##############################################################
         ##################### YOUR CODE HERE - 4-5 lines #############
+        # batch_size = self.config.batch_size
 
-        pass
+        # rows = tf.range(0, batch_size)
+        # a_idx = tf.stack([rows, tf.cast(self.a, dtype=tf.int32)], axis=1)
+        # ones = tf.ones([batch_size])
+
+        # loss_agg = (self.r + self.config.gamma * tf.reduce_max(target_q, axis=1) \
+        #           - (ones - self.done_mask) * tf.gather_nd(q, a_idx)) ** 2
+        a_one_hot = tf.one_hot(self.a, depth=num_actions)
+
+        # (ones - self.done_mask) *
+        print(" -- a_one_hot.shape: " + str(a_one_hot.shape))
+        print(" -- q.shape: " + str(q.shape))
+        print(" -- self.a.shape: " + str(self.a.shape))
+        print('-' * 20)
+        print(" -- self.config.gamma: " + str(self.config.gamma))
+        loss_agg = self.r + self.config.gamma * tf.reduce_max(target_q, axis=1)
+        loss_agg -= tf.reduce_sum(tf.multiply(q, a_one_hot), axis=1)
+        self.loss = tf.reduce_mean(loss_agg ** 2)
 
         ##############################################################
         ######################## END YOUR CODE #######################
-
 
     def add_optimizer_op(self, scope):
         """
@@ -223,24 +301,36 @@ class Linear(DQN):
         """
         ##############################################################
         #################### YOUR CODE HERE - 8-12 lines #############
-
-        pass
-        
+        var_lst = tf.get_collection(scope)
+        optimizer = tf.train.GradientDescentOptimizer(self.lr)
+        self.train_op = optimizer.minimize(self.loss, var_list=var_lst)
+        # grads_and_vars_lst = optimizer.compute_gradients(self.loss, var_list=var_lst)
+        # if self.config.grad_clip:
+        #     grads_clipped_and_vars_lst = []
+        #     for grad_and_var in grads_and_vars_lst:
+        #         grad, var = grad_and_var
+        #         grad_clipped = tf.clip_by_norm(grad, self.config.clip_val)
+        #         grads_clipped_and_vars_lst.append((grad_clipped, var))
+        #         print(var.shape)
+        #     self.train_op = optimizer.apply_gradients(grads_clipped_and_vars_lst)
+        # else:
+        #     self.train_op = optimizer.apply_gradients(grads_and_vars_lst)
+        # # global norm is just a norm of stack vectors
+        self.grad_norm = tf.global_norm(var_lst)
         ##############################################################
         ######################## END YOUR CODE #######################
-    
 
 
 if __name__ == '__main__':
     env = EnvTest((5, 5, 1))
 
     # exploration strategy
-    exp_schedule = LinearExploration(env, config.eps_begin, 
-            config.eps_end, config.eps_nsteps)
+    exp_schedule = LinearExploration(env, config.eps_begin,
+                                     config.eps_end, config.eps_nsteps)
 
     # learning rate schedule
-    lr_schedule  = LinearSchedule(config.lr_begin, config.lr_end,
-            config.lr_nsteps)
+    lr_schedule = LinearSchedule(config.lr_begin, config.lr_end,
+                                 config.lr_nsteps)
 
     # train model
     model = Linear(env, config)

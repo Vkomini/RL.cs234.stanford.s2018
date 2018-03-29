@@ -1,0 +1,817 @@
+2018-03-28 07:17:27,395:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:18:59,582:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:19:38,296:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:21:11,344:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:25:23,407:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:27:09,768:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-28 07:33:17,091:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:19:51,871:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:31:52,132:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:32:49,365:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:34:46,706:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:35:26,383:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:36:20,365:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:37:52,694:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:39:12,338:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:40:54,970:WARNING: From /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/tensorflow/python/ops/clip_ops.py:113: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2018-03-29 06:56:20,698:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 06:56:20,699:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 06:56:20,700:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 06:56:20,701:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 06:56:20,702:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 06:56:20,702:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 06:56:20,703:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 06:56:20,704:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 06:56:20,781:INFO: Evaluating...
+2018-03-29 06:58:00,622:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 06:58:00,623:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 06:58:00,624:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 06:58:00,625:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 06:58:00,626:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 06:58:00,627:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 06:58:00,627:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 06:58:00,628:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 06:58:00,708:INFO: Evaluating...
+2018-03-29 07:07:19,347:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:07:19,348:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:07:19,349:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:07:19,350:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:07:19,351:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:07:19,351:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:07:19,352:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:07:19,353:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:07:19,433:INFO: Evaluating...
+2018-03-29 07:08:32,230:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:08:32,231:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:08:32,232:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:08:32,233:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:08:32,234:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:08:32,235:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:08:32,235:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:08:32,236:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:08:32,312:INFO: Evaluating...
+2018-03-29 07:08:32,353:INFO: Average reward: -0.40 +/- 0.00
+2018-03-29 07:13:59,652:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:13:59,653:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:13:59,654:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:13:59,655:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:13:59,656:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:13:59,657:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:13:59,658:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:13:59,659:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:13:59,742:INFO: Evaluating...
+2018-03-29 07:13:59,778:INFO: Average reward: -0.80 +/- 0.00
+2018-03-29 07:14:27,289:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:14:27,290:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:14:27,291:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:14:27,292:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:14:27,293:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:14:27,293:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:14:27,294:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:14:27,295:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:14:27,371:INFO: Evaluating...
+2018-03-29 07:14:27,410:INFO: Average reward: 0.10 +/- 0.00
+2018-03-29 07:14:42,920:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:14:42,921:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:14:42,922:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:14:42,923:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:14:42,924:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:14:42,925:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:14:42,925:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:14:42,926:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:14:43,002:INFO: Evaluating...
+2018-03-29 07:14:43,039:INFO: Average reward: -0.90 +/- 0.00
+2018-03-29 07:16:39,614:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:16:39,615:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:16:39,616:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:16:39,617:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:16:39,617:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:16:39,618:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:16:39,619:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:16:39,620:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:16:39,696:INFO: Evaluating...
+2018-03-29 07:16:39,732:INFO: Average reward: -0.50 +/- 0.00
+2018-03-29 07:19:53,179:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:19:53,180:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:19:53,181:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:19:53,182:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:19:53,183:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:19:53,184:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:19:53,184:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:19:53,185:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:19:53,261:INFO: Evaluating...
+2018-03-29 07:19:53,304:INFO: Average reward: -0.50 +/- 0.00
+2018-03-29 07:20:23,437:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:20:23,438:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:20:23,439:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:20:23,440:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:20:23,441:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:20:23,442:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:20:23,442:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:20:23,443:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:20:23,520:INFO: Evaluating...
+2018-03-29 07:20:23,559:INFO: Average reward: 0.00 +/- 0.00
+2018-03-29 07:22:21,191:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:22:21,192:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:22:21,193:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:22:21,194:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:22:21,195:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:22:21,195:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:22:21,196:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:22:21,197:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:22:21,275:INFO: Evaluating...
+2018-03-29 07:22:21,317:INFO: Average reward: -0.90 +/- 0.00
+2018-03-29 07:22:35,522:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:22:35,523:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:22:35,524:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:22:35,525:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:22:35,525:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:22:35,526:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:22:35,527:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:22:35,528:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:22:35,608:INFO: Evaluating...
+2018-03-29 07:22:35,645:INFO: Average reward: 1.70 +/- 0.00
+2018-03-29 07:27:19,972:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:27:19,973:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:27:19,974:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:27:19,975:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:27:19,976:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:27:19,976:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:27:19,977:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:27:19,978:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:27:20,055:INFO: Evaluating...
+2018-03-29 07:27:20,095:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 07:27:49,396:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:27:49,397:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:27:49,398:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:27:49,399:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:27:49,400:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:27:49,400:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:27:49,401:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:27:49,402:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:27:49,485:INFO: Evaluating...
+2018-03-29 07:27:49,525:INFO: Average reward: -0.50 +/- 0.00
+2018-03-29 07:28:09,404:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:28:09,405:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:28:09,406:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:28:09,407:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:28:09,408:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:28:09,409:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:28:09,410:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:28:09,411:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:28:09,492:INFO: Evaluating...
+2018-03-29 07:28:09,533:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 07:30:41,763:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:30:41,764:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:30:41,765:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:30:41,766:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:30:41,767:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:30:41,768:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:30:41,768:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:30:41,769:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:30:41,843:INFO: Evaluating...
+2018-03-29 07:30:41,882:INFO: Average reward: 0.00 +/- 0.00
+2018-03-29 07:34:10,328:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:34:10,329:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:34:10,330:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:34:10,331:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:34:10,332:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:34:10,333:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:34:10,333:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:34:10,334:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:34:10,407:INFO: Evaluating...
+2018-03-29 07:34:10,446:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 07:37:52,916:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:37:52,917:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:37:52,918:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:37:52,919:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:37:52,920:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:37:52,921:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:37:52,922:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:37:52,923:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:37:52,998:INFO: Evaluating...
+2018-03-29 07:37:53,035:INFO: Average reward: -0.50 +/- 0.00
+2018-03-29 07:44:34,295:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:44:34,296:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:44:34,297:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:44:34,298:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:44:34,299:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:44:34,300:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:44:34,301:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:44:34,302:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:44:34,373:INFO: Evaluating...
+2018-03-29 07:44:34,412:INFO: Average reward: 0.70 +/- 0.00
+2018-03-29 07:45:09,531:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 07:45:09,532:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 07:45:09,533:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 07:45:09,534:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 07:45:09,535:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 07:45:09,536:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 07:45:09,536:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 07:45:09,537:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 07:45:09,608:INFO: Evaluating...
+2018-03-29 07:45:09,647:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 08:32:41,854:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 08:32:41,855:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 08:32:41,856:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 08:32:41,857:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 08:32:41,858:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 08:32:41,858:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 08:32:41,859:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 08:32:41,860:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 08:32:41,934:INFO: Evaluating...
+2018-03-29 08:32:41,974:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 08:52:08,941:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 08:52:08,942:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 08:52:08,943:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 08:52:08,944:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 08:52:08,945:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 08:52:08,945:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 08:52:08,946:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 08:52:08,947:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 08:52:09,022:INFO: Evaluating...
+2018-03-29 08:52:09,062:INFO: Average reward: 0.50 +/- 0.00
+2018-03-29 08:53:07,341:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 08:53:07,342:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 08:53:07,343:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 08:53:07,344:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 08:53:07,344:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 08:53:07,345:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 08:53:07,346:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 08:53:07,347:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 08:53:07,420:INFO: Evaluating...
+2018-03-29 08:53:07,460:INFO: Average reward: -0.70 +/- 0.00
+2018-03-29 08:57:27,560:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 08:57:27,561:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 08:57:27,562:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 08:57:27,563:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 08:57:27,564:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 08:57:27,565:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 08:57:27,565:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 08:57:27,566:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 08:57:27,637:INFO: Evaluating...
+2018-03-29 09:00:02,902:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 09:00:02,903:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 09:00:02,904:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 09:00:02,905:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 09:00:02,906:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 09:00:02,906:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 09:00:02,907:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 09:00:02,908:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 09:00:02,977:INFO: Evaluating...
+2018-03-29 09:03:16,558:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 09:03:16,559:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 09:03:16,559:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 09:03:16,560:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 09:03:16,561:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 09:03:16,562:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 09:03:16,563:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 09:03:16,563:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 09:03:16,636:INFO: Evaluating...
+2018-03-29 09:04:15,737:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 09:04:15,738:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 09:04:15,739:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 09:04:15,740:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 09:04:15,741:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 09:04:15,742:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 09:04:15,743:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 09:04:15,743:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 09:04:15,816:INFO: Evaluating...
+2018-03-29 09:04:15,853:INFO: Average reward: -0.10 +/- 0.00
+2018-03-29 09:07:52,429:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 09:07:52,431:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 09:07:52,432:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 09:07:52,433:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 09:07:52,434:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 09:07:52,434:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 09:07:52,435:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 09:07:52,436:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 09:07:52,507:INFO: Evaluating...
+2018-03-29 09:07:52,546:INFO: Average reward: 0.10 +/- 0.00
+2018-03-29 09:08:39,576:INFO: Summary name grads norm is illegal; using grads_norm instead.
+2018-03-29 09:08:39,577:INFO: Summary name Avg Reward is illegal; using Avg_Reward instead.
+2018-03-29 09:08:39,577:INFO: Summary name Max Reward is illegal; using Max_Reward instead.
+2018-03-29 09:08:39,578:INFO: Summary name Std Reward is illegal; using Std_Reward instead.
+2018-03-29 09:08:39,579:INFO: Summary name Avg Q is illegal; using Avg_Q instead.
+2018-03-29 09:08:39,580:INFO: Summary name Max Q is illegal; using Max_Q instead.
+2018-03-29 09:08:39,581:INFO: Summary name Std Q is illegal; using Std_Q instead.
+2018-03-29 09:08:39,582:INFO: Summary name Eval Reward is illegal; using Eval_Reward instead.
+2018-03-29 09:08:39,651:INFO: Evaluating...
+2018-03-29 09:08:39,689:INFO: Average reward: -1.00 +/- 0.00
+2018-03-29 09:08:40,643:INFO: Evaluating...
+2018-03-29 09:08:40,674:INFO: Average reward: -1.00 +/- 0.00
+2018-03-29 09:08:41,705:INFO: Evaluating...
+2018-03-29 09:08:41,737:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:42,768:INFO: Evaluating...
+2018-03-29 09:08:42,799:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:43,829:INFO: Evaluating...
+2018-03-29 09:08:43,862:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:44,935:INFO: Evaluating...
+2018-03-29 09:08:44,966:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:45,990:INFO: Evaluating...
+2018-03-29 09:08:46,021:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:47,047:INFO: Evaluating...
+2018-03-29 09:08:47,079:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:48,107:INFO: Evaluating...
+2018-03-29 09:08:48,138:INFO: Average reward: 2.00 +/- 0.00
+2018-03-29 09:08:49,164:INFO: Evaluating...
+2018-03-29 09:08:49,197:INFO: Average reward: 4.00 +/- 0.00
+2018-03-29 09:08:50,199:INFO: - Training done.
+2018-03-29 09:08:50,225:INFO: Evaluating...
+2018-03-29 09:08:50,259:INFO: Average reward: 2.00 +/- 0.00
+2018-03-29 09:08:50,297:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans (u'/Users/borislav/cs234_hw2_FL/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
+2018-03-29 09:08:50,297:INFO: findfont: Found a missing font file.  Rebuilding cache.
+2018-03-29 09:08:50,297:INFO: font search path ['/Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf', '/Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm', '/Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts']
+2018-03-29 09:08:50,323:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+2018-03-29 09:08:50,323:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+2018-03-29 09:08:50,323:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+2018-03-29 09:08:50,323:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+2018-03-29 09:08:50,323:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+2018-03-29 09:08:50,324:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+2018-03-29 09:08:50,325:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Library/Fonts/Trebuchet MS Italic.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Library/Fonts/Hoefler Text Ornaments.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-BoldItalic.otf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Library/Fonts/Times New Roman.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Medium.otf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Library/Fonts/Verdana Bold.ttf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Medium.otf
+2018-03-29 09:08:50,326:DEBUG: trying fontname /Library/Fonts/Arial Unicode.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/STIXSizThreeSymReg.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/DIN Condensed Bold.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/Arial.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Semibold.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/AppleGothic.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Bold.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/Arial Narrow.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Bold.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/NISC18030.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Ultralight.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Semibold.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/AppleMyungjo.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /Library/Fonts/Mishafi Gold.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/ZapfDingbats.ttf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Semibold.otf
+2018-03-29 09:08:50,327:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Heavy.otf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/STIXIntDBol.otf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /System/Library/Fonts/SFNSTextItalic.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/DIN Alternate Bold.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Bold.otf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/STIXSizThreeSymBol.otf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplay.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Courier New.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Arial Narrow Bold Italic.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Luminari.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Zapfino.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Arial Narrow Bold.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /Library/Fonts/Times New Roman Italic.ttf
+2018-03-29 09:08:50,328:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Medium.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Krungthep.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Light.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Georgia.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/STIXIntSmBol.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Diwan Thuluth.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Trebuchet MS Bold.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-HeavyItalic.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Bradley Hand Bold.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/Apple Symbols.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Times New Roman Bold Italic.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /Library/Fonts/Arial Narrow Italic.ttf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Light.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Regular.otf
+2018-03-29 09:08:50,329:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Ultralight.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Heavy.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/PlantagenetCherokee.ttf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/Times New Roman Bold.ttf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/Arial Bold Italic.ttf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Regular.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/STIXVar.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/Mishafi.ttf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/STIXVarBol.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Regular.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Semibold.otf
+2018-03-29 09:08:50,330:DEBUG: trying fontname /Library/Fonts/STIXIntUpBol.otf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Bold.otf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Skia.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/STIXSizFiveSymReg.otf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Verdana.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Farisi.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /System/Library/Fonts/SFNSText.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Light.otf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Gurmukhi.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Bodoni 72 Smallcaps Book.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Arial Italic.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/STIXNonUniBolIta.otf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /Library/Fonts/Georgia Italic.ttf
+2018-03-29 09:08:50,331:DEBUG: trying fontname /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/Courier New Bold Italic.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/Arial Rounded Bold.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Regular.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/LastResort.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Heavy.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/Verdana Bold Italic.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Black.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Thin.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Black.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/InaiMathi.ttf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/STIXIntSmReg.otf
+2018-03-29 09:08:50,332:DEBUG: trying fontname /Library/Fonts/Kokonor.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/Verdana Italic.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/STIXGeneralBol.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/Apple Braille.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Heavy.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/Chalkduster.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/STIXNonUni.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Black.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/STIXNonUniIta.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/STIXIntUpReg.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/Comic Sans MS Bold.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/Trebuchet MS.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-MediumItalic.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Thin.otf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/Courier New Bold.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /Library/Fonts/BigCaslon.ttf
+2018-03-29 09:08:50,333:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Semibold.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Ayuthaya.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-SemiboldItalic.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Bold.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Herculanum.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Webdings.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-RegularItalic.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/Symbol.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Trebuchet MS Bold Italic.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Wingdings 2.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Tahoma.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/Brush Script.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/Keyboard.ttf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Medium.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/STIXSizOneSymReg.otf
+2018-03-29 09:08:50,334:DEBUG: trying fontname /Library/Fonts/STIXIntUpSmReg.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Andale Mono.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Khmer Sangam MN.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Microsoft Sans Serif.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/STIXIntUpDBol.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-Light.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/STIXGeneral.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Courier New Italic.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Arial Black.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Ultralight.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Thin.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/STIXGeneralItalic.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Silom.ttf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /System/Library/Fonts/SFNSDisplayCondensed-Medium.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /System/Library/Fonts/SFNSTextCondensed-Light.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/STIXSizFourSymReg.otf
+2018-03-29 09:08:50,335:DEBUG: trying fontname /Library/Fonts/Apple Chancery.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /System/Library/Fonts/SFCompactText-LightItalic.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Wingdings 3.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXGeneralBolIta.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /System/Library/Fonts/SFCompactDisplay-Heavy.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXIntUpSmBol.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Lao Sangam MN.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Trattatello.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXSizOneSymBol.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Comic Sans MS.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXSizTwoSymReg.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Bodoni Ornaments.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXSizFourSymBol.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Arial Bold.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/Georgia Bold.ttf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXIntDReg.otf
+2018-03-29 09:08:50,336:DEBUG: trying fontname /Library/Fonts/STIXSizTwoSymBol.otf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/Wingdings.ttf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/Impact.ttf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/Tahoma Bold.ttf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/STIXNonUniBol.otf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/Georgia Bold Italic.ttf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/STIXIntUpDReg.otf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /Library/Fonts/Sathu.ttf
+2018-03-29 09:08:50,337:DEBUG: trying fontname /System/Library/Fonts/SFCompactRounded-Regular.otf
+2018-03-29 09:08:50,337:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+2018-03-29 09:08:50,341:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
+2018-03-29 09:08:50,342:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+2018-03-29 09:08:50,343:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+2018-03-29 09:08:50,344:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+2018-03-29 09:08:50,345:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+2018-03-29 09:08:50,348:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+2018-03-29 09:08:50,351:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+2018-03-29 09:08:50,351:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+2018-03-29 09:08:50,353:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+2018-03-29 09:08:50,355:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+2018-03-29 09:08:50,357:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+2018-03-29 09:08:50,358:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+2018-03-29 09:08:50,360:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+2018-03-29 09:08:50,360:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
+2018-03-29 09:08:50,362:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+2018-03-29 09:08:50,363:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+2018-03-29 09:08:50,364:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+2018-03-29 09:08:50,366:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+2018-03-29 09:08:50,368:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+2018-03-29 09:08:50,369:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+2018-03-29 09:08:50,370:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+2018-03-29 09:08:50,370:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+2018-03-29 09:08:50,371:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+2018-03-29 09:08:50,372:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+2018-03-29 09:08:50,373:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+2018-03-29 09:08:50,374:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
+2018-03-29 09:08:50,374:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+2018-03-29 09:08:50,375:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+2018-03-29 09:08:50,376:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+2018-03-29 09:08:50,377:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+2018-03-29 09:08:50,378:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+2018-03-29 09:08:50,379:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+2018-03-29 09:08:50,380:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+2018-03-29 09:08:50,381:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+2018-03-29 09:08:50,382:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+2018-03-29 09:08:50,383:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
+2018-03-29 09:08:50,384:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+2018-03-29 09:08:50,386:DEBUG: createFontDict: /Library/Fonts/Trebuchet MS Italic.ttf
+2018-03-29 09:08:50,386:DEBUG: createFontDict: /Library/Fonts/Hoefler Text Ornaments.ttf
+2018-03-29 09:08:50,388:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-BoldItalic.otf
+2018-03-29 09:08:50,393:DEBUG: createFontDict: /Library/Fonts/Times New Roman.ttf
+2018-03-29 09:08:50,395:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Medium.otf
+2018-03-29 09:08:50,398:DEBUG: createFontDict: /Library/Fonts/Verdana Bold.ttf
+2018-03-29 09:08:50,399:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Medium.otf
+2018-03-29 09:08:50,400:DEBUG: createFontDict: /Library/Fonts/Arial Unicode.ttf
+2018-03-29 09:08:50,404:DEBUG: createFontDict: /Library/Fonts/STIXSizThreeSymReg.otf
+2018-03-29 09:08:50,406:DEBUG: createFontDict: /Library/Fonts/DIN Condensed Bold.ttf
+2018-03-29 09:08:50,408:DEBUG: createFontDict: /Library/Fonts/Arial.ttf
+2018-03-29 09:08:50,410:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Semibold.otf
+2018-03-29 09:08:50,414:DEBUG: createFontDict: /Library/Fonts/AppleGothic.ttf
+2018-03-29 09:08:50,420:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Bold.otf
+2018-03-29 09:08:50,423:DEBUG: createFontDict: /Library/Fonts/Arial Narrow.ttf
+2018-03-29 09:08:50,426:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Bold.otf
+2018-03-29 09:08:50,429:DEBUG: createFontDict: /Library/Fonts/NISC18030.ttf
+2018-03-29 09:08:50,431:INFO: Could not open font file /Library/Fonts/NISC18030.ttf
+2018-03-29 09:08:50,431:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Ultralight.otf
+2018-03-29 09:08:50,434:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Semibold.otf
+2018-03-29 09:08:50,436:DEBUG: createFontDict: /Library/Fonts/AppleMyungjo.ttf
+2018-03-29 09:08:50,448:DEBUG: createFontDict: /Library/Fonts/Mishafi Gold.ttf
+2018-03-29 09:08:50,451:DEBUG: createFontDict: /System/Library/Fonts/ZapfDingbats.ttf
+2018-03-29 09:08:50,452:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Semibold.otf
+2018-03-29 09:08:50,455:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Heavy.otf
+2018-03-29 09:08:50,458:DEBUG: createFontDict: /Library/Fonts/STIXIntDBol.otf
+2018-03-29 09:08:50,459:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextItalic.ttf
+2018-03-29 09:08:50,461:DEBUG: createFontDict: /Library/Fonts/DIN Alternate Bold.ttf
+2018-03-29 09:08:50,463:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Bold.otf
+2018-03-29 09:08:50,466:DEBUG: createFontDict: /Library/Fonts/STIXSizThreeSymBol.otf
+2018-03-29 09:08:50,467:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplay.ttf
+2018-03-29 09:08:50,468:DEBUG: createFontDict: /Library/Fonts/Courier New.ttf
+2018-03-29 09:08:50,469:DEBUG: createFontDict: /Library/Fonts/Arial Narrow Bold Italic.ttf
+2018-03-29 09:08:50,471:DEBUG: createFontDict: /Library/Fonts/Luminari.ttf
+2018-03-29 09:08:50,474:DEBUG: createFontDict: /Library/Fonts/Zapfino.ttf
+2018-03-29 09:08:50,476:DEBUG: createFontDict: /Library/Fonts/Arial Narrow Bold.ttf
+2018-03-29 09:08:50,478:DEBUG: createFontDict: /Library/Fonts/Times New Roman Italic.ttf
+2018-03-29 09:08:50,479:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Medium.otf
+2018-03-29 09:08:50,481:DEBUG: createFontDict: /Library/Fonts/Krungthep.ttf
+2018-03-29 09:08:50,486:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Light.otf
+2018-03-29 09:08:50,489:DEBUG: createFontDict: /Library/Fonts/Georgia.ttf
+2018-03-29 09:08:50,490:DEBUG: createFontDict: /Library/Fonts/STIXIntSmBol.otf
+2018-03-29 09:08:50,492:DEBUG: createFontDict: /Library/Fonts/Diwan Thuluth.ttf
+2018-03-29 09:08:50,495:DEBUG: createFontDict: /Library/Fonts/Trebuchet MS Bold.ttf
+2018-03-29 09:08:50,496:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-HeavyItalic.otf
+2018-03-29 09:08:50,499:DEBUG: createFontDict: /Library/Fonts/Bradley Hand Bold.ttf
+2018-03-29 09:08:50,500:DEBUG: createFontDict: /System/Library/Fonts/Apple Symbols.ttf
+2018-03-29 09:08:50,501:DEBUG: createFontDict: /Library/Fonts/Times New Roman Bold Italic.ttf
+2018-03-29 09:08:50,503:DEBUG: createFontDict: /Library/Fonts/Arial Narrow Italic.ttf
+2018-03-29 09:08:50,505:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Light.otf
+2018-03-29 09:08:50,508:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Regular.otf
+2018-03-29 09:08:50,511:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Ultralight.otf
+2018-03-29 09:08:50,513:DEBUG: createFontDict: /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf
+2018-03-29 09:08:50,514:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Heavy.otf
+2018-03-29 09:08:50,517:DEBUG: createFontDict: /Library/Fonts/PlantagenetCherokee.ttf
+2018-03-29 09:08:50,518:DEBUG: createFontDict: /Library/Fonts/Times New Roman Bold.ttf
+2018-03-29 09:08:50,519:DEBUG: createFontDict: /Library/Fonts/Arial Bold Italic.ttf
+2018-03-29 09:08:50,521:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Regular.otf
+2018-03-29 09:08:50,523:DEBUG: createFontDict: /Library/Fonts/STIXVar.otf
+2018-03-29 09:08:50,524:DEBUG: createFontDict: /Library/Fonts/Mishafi.ttf
+2018-03-29 09:08:50,527:DEBUG: createFontDict: /Library/Fonts/STIXVarBol.otf
+2018-03-29 09:08:50,530:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Regular.otf
+2018-03-29 09:08:50,531:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Semibold.otf
+2018-03-29 09:08:50,535:DEBUG: createFontDict: /Library/Fonts/STIXIntUpBol.otf
+2018-03-29 09:08:50,536:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Bold.otf
+2018-03-29 09:08:50,540:DEBUG: createFontDict: /Library/Fonts/Skia.ttf
+2018-03-29 09:08:50,544:DEBUG: createFontDict: /Library/Fonts/STIXSizFiveSymReg.otf
+2018-03-29 09:08:50,545:DEBUG: createFontDict: /Library/Fonts/Verdana.ttf
+2018-03-29 09:08:50,546:DEBUG: createFontDict: /Library/Fonts/Farisi.ttf
+2018-03-29 09:08:50,549:DEBUG: createFontDict: /System/Library/Fonts/SFNSText.ttf
+2018-03-29 09:08:50,550:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Light.otf
+2018-03-29 09:08:50,553:DEBUG: createFontDict: /Library/Fonts/Gurmukhi.ttf
+2018-03-29 09:08:50,554:DEBUG: createFontDict: /Library/Fonts/Bodoni 72 Smallcaps Book.ttf
+2018-03-29 09:08:50,556:DEBUG: createFontDict: /Library/Fonts/Arial Italic.ttf
+2018-03-29 09:08:50,557:DEBUG: createFontDict: /Library/Fonts/STIXNonUniBolIta.otf
+2018-03-29 09:08:50,558:DEBUG: createFontDict: /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf
+2018-03-29 09:08:50,560:DEBUG: createFontDict: /Library/Fonts/Georgia Italic.ttf
+2018-03-29 09:08:50,561:DEBUG: createFontDict: /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf
+2018-03-29 09:08:50,563:DEBUG: createFontDict: /Library/Fonts/Courier New Bold Italic.ttf
+2018-03-29 09:08:50,565:DEBUG: createFontDict: /Library/Fonts/Arial Rounded Bold.ttf
+2018-03-29 09:08:50,566:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Regular.otf
+2018-03-29 09:08:50,568:DEBUG: createFontDict: /System/Library/Fonts/LastResort.ttf
+2018-03-29 09:08:50,569:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Heavy.otf
+2018-03-29 09:08:50,571:DEBUG: createFontDict: /Library/Fonts/Verdana Bold Italic.ttf
+2018-03-29 09:08:50,572:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Black.otf
+2018-03-29 09:08:50,577:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Thin.otf
+2018-03-29 09:08:50,580:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Black.otf
+2018-03-29 09:08:50,584:DEBUG: createFontDict: /Library/Fonts/InaiMathi.ttf
+2018-03-29 09:08:50,586:DEBUG: createFontDict: /Library/Fonts/STIXIntSmReg.otf
+2018-03-29 09:08:50,588:DEBUG: createFontDict: /Library/Fonts/Kokonor.ttf
+2018-03-29 09:08:50,590:DEBUG: createFontDict: /Library/Fonts/Verdana Italic.ttf
+2018-03-29 09:08:50,591:DEBUG: createFontDict: /Library/Fonts/STIXGeneralBol.otf
+2018-03-29 09:08:50,594:DEBUG: createFontDict: /System/Library/Fonts/Apple Braille.ttf
+2018-03-29 09:08:50,595:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Heavy.otf
+2018-03-29 09:08:50,598:DEBUG: createFontDict: /Library/Fonts/Chalkduster.ttf
+2018-03-29 09:08:50,600:DEBUG: createFontDict: /Library/Fonts/STIXNonUni.otf
+2018-03-29 09:08:50,601:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Black.otf
+2018-03-29 09:08:50,603:DEBUG: createFontDict: /Library/Fonts/STIXNonUniIta.otf
+2018-03-29 09:08:50,605:DEBUG: createFontDict: /Library/Fonts/STIXIntUpReg.otf
+2018-03-29 09:08:50,605:DEBUG: createFontDict: /Library/Fonts/Comic Sans MS Bold.ttf
+2018-03-29 09:08:50,607:DEBUG: createFontDict: /Library/Fonts/Trebuchet MS.ttf
+2018-03-29 09:08:50,608:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-MediumItalic.otf
+2018-03-29 09:08:50,610:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Thin.otf
+2018-03-29 09:08:50,612:DEBUG: createFontDict: /Library/Fonts/Courier New Bold.ttf
+2018-03-29 09:08:50,615:DEBUG: createFontDict: /Library/Fonts/BigCaslon.ttf
+2018-03-29 09:08:50,616:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Semibold.otf
+2018-03-29 09:08:50,621:DEBUG: createFontDict: /Library/Fonts/Ayuthaya.ttf
+2018-03-29 09:08:50,623:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-SemiboldItalic.otf
+2018-03-29 09:08:50,625:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Bold.otf
+2018-03-29 09:08:50,628:DEBUG: createFontDict: /Library/Fonts/Herculanum.ttf
+2018-03-29 09:08:50,630:DEBUG: createFontDict: /Library/Fonts/Webdings.ttf
+2018-03-29 09:08:50,631:DEBUG: createFontDict: /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf
+2018-03-29 09:08:50,633:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-RegularItalic.otf
+2018-03-29 09:08:50,635:DEBUG: createFontDict: /System/Library/Fonts/Symbol.ttf
+2018-03-29 09:08:50,636:DEBUG: createFontDict: /Library/Fonts/Trebuchet MS Bold Italic.ttf
+2018-03-29 09:08:50,637:DEBUG: createFontDict: /Library/Fonts/Wingdings 2.ttf
+2018-03-29 09:08:50,638:DEBUG: createFontDict: /Library/Fonts/Tahoma.ttf
+2018-03-29 09:08:50,639:DEBUG: createFontDict: /Library/Fonts/Brush Script.ttf
+2018-03-29 09:08:50,642:DEBUG: createFontDict: /System/Library/Fonts/Keyboard.ttf
+2018-03-29 09:08:50,643:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Medium.otf
+2018-03-29 09:08:50,646:DEBUG: createFontDict: /Library/Fonts/STIXSizOneSymReg.otf
+2018-03-29 09:08:50,647:DEBUG: createFontDict: /Library/Fonts/STIXIntUpSmReg.otf
+2018-03-29 09:08:50,648:DEBUG: createFontDict: /Library/Fonts/Andale Mono.ttf
+2018-03-29 09:08:50,650:DEBUG: createFontDict: /Library/Fonts/Khmer Sangam MN.ttf
+2018-03-29 09:08:50,651:DEBUG: createFontDict: /Library/Fonts/Microsoft Sans Serif.ttf
+2018-03-29 09:08:50,654:DEBUG: createFontDict: /Library/Fonts/STIXIntUpDBol.otf
+2018-03-29 09:08:50,655:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-Light.otf
+2018-03-29 09:08:50,656:DEBUG: createFontDict: /Library/Fonts/STIXGeneral.otf
+2018-03-29 09:08:50,658:DEBUG: createFontDict: /Library/Fonts/Courier New Italic.ttf
+2018-03-29 09:08:50,660:DEBUG: createFontDict: /Library/Fonts/Arial Black.ttf
+2018-03-29 09:08:50,664:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Ultralight.otf
+2018-03-29 09:08:50,667:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Thin.otf
+2018-03-29 09:08:50,670:DEBUG: createFontDict: /Library/Fonts/STIXGeneralItalic.otf
+2018-03-29 09:08:50,673:DEBUG: createFontDict: /Library/Fonts/Silom.ttf
+2018-03-29 09:08:50,675:DEBUG: createFontDict: /System/Library/Fonts/SFNSDisplayCondensed-Medium.otf
+2018-03-29 09:08:50,678:DEBUG: createFontDict: /System/Library/Fonts/SFNSTextCondensed-Light.otf
+2018-03-29 09:08:50,681:DEBUG: createFontDict: /Library/Fonts/STIXSizFourSymReg.otf
+2018-03-29 09:08:50,683:DEBUG: createFontDict: /Library/Fonts/Apple Chancery.ttf
+2018-03-29 09:08:50,686:DEBUG: createFontDict: /System/Library/Fonts/SFCompactText-LightItalic.otf
+2018-03-29 09:08:50,689:DEBUG: createFontDict: /Library/Fonts/Wingdings 3.ttf
+2018-03-29 09:08:50,690:DEBUG: createFontDict: /Library/Fonts/STIXGeneralBolIta.otf
+2018-03-29 09:08:50,693:DEBUG: createFontDict: /System/Library/Fonts/SFCompactDisplay-Heavy.otf
+2018-03-29 09:08:50,697:DEBUG: createFontDict: /Library/Fonts/STIXIntUpSmBol.otf
+2018-03-29 09:08:50,699:DEBUG: createFontDict: /Library/Fonts/Lao Sangam MN.ttf
+2018-03-29 09:08:50,699:DEBUG: createFontDict: /Library/Fonts/Trattatello.ttf
+2018-03-29 09:08:50,703:DEBUG: createFontDict: /Library/Fonts/STIXSizOneSymBol.otf
+2018-03-29 09:08:50,704:DEBUG: createFontDict: /Library/Fonts/Comic Sans MS.ttf
+2018-03-29 09:08:50,706:DEBUG: createFontDict: /Library/Fonts/STIXSizTwoSymReg.otf
+2018-03-29 09:08:50,709:DEBUG: createFontDict: /Library/Fonts/Bodoni Ornaments.ttf
+2018-03-29 09:08:50,711:DEBUG: createFontDict: /Library/Fonts/STIXSizFourSymBol.otf
+2018-03-29 09:08:50,713:DEBUG: createFontDict: /Library/Fonts/Arial Bold.ttf
+2018-03-29 09:08:50,716:DEBUG: createFontDict: /Library/Fonts/Georgia Bold.ttf
+2018-03-29 09:08:50,718:DEBUG: createFontDict: /Library/Fonts/STIXIntDReg.otf
+2018-03-29 09:08:50,719:DEBUG: createFontDict: /Library/Fonts/STIXSizTwoSymBol.otf
+2018-03-29 09:08:50,721:DEBUG: createFontDict: /Library/Fonts/Wingdings.ttf
+2018-03-29 09:08:50,723:DEBUG: createFontDict: /Library/Fonts/Impact.ttf
+2018-03-29 09:08:50,726:DEBUG: createFontDict: /Library/Fonts/Tahoma Bold.ttf
+2018-03-29 09:08:50,728:DEBUG: createFontDict: /Library/Fonts/STIXNonUniBol.otf
+2018-03-29 09:08:50,728:DEBUG: createFontDict: /Library/Fonts/Georgia Bold Italic.ttf
+2018-03-29 09:08:50,730:DEBUG: createFontDict: /Library/Fonts/STIXIntUpDReg.otf
+2018-03-29 09:08:50,732:DEBUG: createFontDict: /Library/Fonts/Sathu.ttf
+2018-03-29 09:08:50,734:DEBUG: createFontDict: /System/Library/Fonts/SFCompactRounded-Regular.otf
+2018-03-29 09:08:50,746:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-BoldItalic.afm
+2018-03-29 09:08:50,763:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica.afm
+2018-03-29 09:08:50,783:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pplbi8a.afm
+2018-03-29 09:08:50,787:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pcrr8a.afm
+2018-03-29 09:08:50,792:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvro8an.afm
+2018-03-29 09:08:50,796:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Symbol.afm
+2018-03-29 09:08:50,802:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-BoldOblique.afm
+2018-03-29 09:08:50,817:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/psyr.afm
+2018-03-29 09:08:50,820:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/ptmbi8a.afm
+2018-03-29 09:08:50,825:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pagd8a.afm
+2018-03-29 09:08:50,830:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pplr8a.afm
+2018-03-29 09:08:50,834:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pbkli8a.afm
+2018-03-29 09:08:50,839:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvbo8an.afm
+2018-03-29 09:08:50,843:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pcrbo8a.afm
+2018-03-29 09:08:50,850:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvro8a.afm
+2018-03-29 09:08:50,855:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier.afm
+2018-03-29 09:08:50,860:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/cmmi10.afm
+2018-03-29 09:08:50,864:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pagk8a.afm
+2018-03-29 09:08:50,868:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pncb8a.afm
+2018-03-29 09:08:50,873:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Bold.afm
+2018-03-29 09:08:50,877:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Italic.afm
+2018-03-29 09:08:50,890:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/cmex10.afm
+2018-03-29 09:08:50,895:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvr8a.afm
+2018-03-29 09:08:50,900:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pcrro8a.afm
+2018-03-29 09:08:50,904:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pagko8a.afm
+2018-03-29 09:08:50,910:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Bold.afm
+2018-03-29 09:08:50,925:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pncr8a.afm
+2018-03-29 09:08:50,931:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pzdr.afm
+2018-03-29 09:08:50,934:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvb8an.afm
+2018-03-29 09:08:50,941:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/cmsy10.afm
+2018-03-29 09:08:50,944:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pbkdi8a.afm
+2018-03-29 09:08:50,948:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/putr8a.afm
+2018-03-29 09:08:50,955:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pbkd8a.afm
+2018-03-29 09:08:50,961:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvr8an.afm
+2018-03-29 09:08:50,966:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pncbi8a.afm
+2018-03-29 09:08:50,971:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/cmr10.afm
+2018-03-29 09:08:50,975:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvl8a.afm
+2018-03-29 09:08:50,979:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/putbi8a.afm
+2018-03-29 09:08:50,987:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvbo8a.afm
+2018-03-29 09:08:50,992:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Helvetica-Oblique.afm
+2018-03-29 09:08:51,007:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/ptmb8a.afm
+2018-03-29 09:08:51,013:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pplri8a.afm
+2018-03-29 09:08:51,018:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pcrb8a.afm
+2018-03-29 09:08:51,022:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-BoldOblique.afm
+2018-03-29 09:08:51,027:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Roman.afm
+2018-03-29 09:08:51,042:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pncri8a.afm
+2018-03-29 09:08:51,047:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/ptmri8a.afm
+2018-03-29 09:08:51,052:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pzcmi8a.afm
+2018-03-29 09:08:51,056:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pplb8a.afm
+2018-03-29 09:08:51,060:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/ptmr8a.afm
+2018-03-29 09:08:51,065:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Times-Bold.afm
+2018-03-29 09:08:51,081:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pbkl8a.afm
+2018-03-29 09:08:51,085:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/putb8a.afm
+2018-03-29 09:08:51,092:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/ZapfDingbats.afm
+2018-03-29 09:08:51,096:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts/Courier-Oblique.afm
+2018-03-29 09:08:51,101:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/pagdo8a.afm
+2018-03-29 09:08:51,105:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvlo8a.afm
+2018-03-29 09:08:51,110:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/cmtt10.afm
+2018-03-29 09:08:51,112:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/putri8a.afm
+2018-03-29 09:08:51,119:DEBUG: createFontDict: /Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/afm/phvb8a.afm
+2018-03-29 09:08:51,135:INFO: generated new fontManager
+2018-03-29 09:08:51,139:DEBUG: findfont: Matching :family=sans-serif:style=normal:variant=normal:weight=normal:stretch=normal:size=10.0 to DejaVu Sans ('/Users/borislav/cs234_HW2_DQN/.env/lib/python2.7/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf') with score of 0.050000
