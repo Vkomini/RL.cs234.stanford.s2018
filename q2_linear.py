@@ -109,7 +109,9 @@ class Linear(DQN):
         """
         ##############################################################
         ################ YOUR CODE HERE - 2-3 lines ##################
-        state_shape = list(self.env.observation_space.shape)
+
+        # NOTE: self.env.observation_space.shape is wrong
+        # state_shape = list(self.env.observation_space.shape)
         _, img_height, img_width, nchannels = state.shape
         state_flat_dim = img_height * img_width * nchannels
         if scope == "target_q":

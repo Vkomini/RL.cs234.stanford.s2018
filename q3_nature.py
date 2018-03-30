@@ -1,5 +1,5 @@
 import tensorflow as tf
-import tensorflow.contrib.layers as layers
+# import tensorflow.layers as layers
 
 from utils.general import get_logger
 from utils.test_env import EnvTest
@@ -31,6 +31,8 @@ class NatureQN(Linear):
             out: (tf tensor) of shape = (batch_size, num_actions)
         """
         # this information might be useful
+
+        # NOTE: 
         num_actions = self.env.action_space.n
         out = state
         ##############################################################
@@ -55,8 +57,56 @@ class NatureQN(Linear):
         """
         ##############################################################
         ################ YOUR CODE HERE - 10-15 lines ################
+        # pad to the size used in the paper: 84 x 84
+        N = self.config.batch_size
+        with tf.variable_scope(scope, reuse=reuse):
 
-        pass
+            batch_padded = tf.pad(state, [[0, 0], [2, 2], [2, 2], [0, 0]])
+
+            layer1 = tf.contrib.layers.conv2d(
+                inputs=batch_padded,
+                num_outputs=32,
+                kernel_size=[8, 8],
+                stride = 4,
+                padding="VALID",
+                activation_fn=tf.nn.relu,
+                variables_collections=scope
+            )
+
+            layer2 = tf.contrib.layers.conv2d(
+                inputs=layer1,
+                num_outputs=64,
+                kernel_size=[4, 4],
+                stride = 2,
+                padding="VALID",
+                activation_fn=tf.nn.relu,
+                variables_collections=scope
+            )
+
+            layer3 = tf.contrib.layers.conv2d(
+                inputs=layer2,
+                num_outputs=64,
+                kernel_size=[3, 3],
+                stride = 1,
+                padding="VALID",
+                activation_fn=tf.nn.relu,
+                variables_collections=scope
+            )
+
+            layer4 = tf.contrib.layers.fully_connected(
+                tf.reshape(layer3, [-1, 7 * 7 * 64]),
+                512,
+                activation_fn=tf.nn.relu,
+                variables_collections=scope
+            )
+
+            layer5 = tf.contrib.layers.fully_connected(
+                layer4,
+                num_actions,
+                activation_fn=None,
+                variables_collections=scope
+            )
+            out = layer5
 
         ##############################################################
         ######################## END YOUR CODE #######################
