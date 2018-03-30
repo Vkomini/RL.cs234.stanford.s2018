@@ -110,10 +110,8 @@ class Linear(DQN):
         ##############################################################
         ################ YOUR CODE HERE - 2-3 lines ##################
         state_shape = list(self.env.observation_space.shape)
-        print(" -- state_shape: " + str(state_shape))
         _, img_height, img_width, nchannels = state.shape
         state_flat_dim = img_height * img_width * nchannels
-        print(" -- state.shape: " + str(state.shape))
         if scope == "target_q":
             with tf.variable_scope(scope, reuse=reuse):
                 batch_state = tf.reshape(state, [-1, state_flat_dim])
@@ -257,13 +255,6 @@ class Linear(DQN):
         # loss_agg = (self.r + self.config.gamma * tf.reduce_max(target_q, axis=1) \
         #           - (ones - self.done_mask) * tf.gather_nd(q, a_idx)) ** 2
         a_one_hot = tf.one_hot(self.a, depth=num_actions)
-
-        # (ones - self.done_mask) *
-        print(" -- a_one_hot.shape: " + str(a_one_hot.shape))
-        print(" -- q.shape: " + str(q.shape))
-        print(" -- self.a.shape: " + str(self.a.shape))
-        print('-' * 20)
-        print(" -- self.config.gamma: " + str(self.config.gamma))
         loss_agg = self.r + self.config.gamma * tf.reduce_max(target_q, axis=1)
         loss_agg -= tf.reduce_sum(tf.multiply(q, a_one_hot), axis=1)
         self.loss = tf.reduce_mean(loss_agg ** 2)
@@ -302,20 +293,19 @@ class Linear(DQN):
         ##############################################################
         #################### YOUR CODE HERE - 8-12 lines #############
         var_lst = tf.get_collection(scope)
-        optimizer = tf.train.GradientDescentOptimizer(self.lr)
-        self.train_op = optimizer.minimize(self.loss, var_list=var_lst)
-        # grads_and_vars_lst = optimizer.compute_gradients(self.loss, var_list=var_lst)
-        # if self.config.grad_clip:
-        #     grads_clipped_and_vars_lst = []
-        #     for grad_and_var in grads_and_vars_lst:
-        #         grad, var = grad_and_var
-        #         grad_clipped = tf.clip_by_norm(grad, self.config.clip_val)
-        #         grads_clipped_and_vars_lst.append((grad_clipped, var))
-        #         print(var.shape)
-        #     self.train_op = optimizer.apply_gradients(grads_clipped_and_vars_lst)
-        # else:
-        #     self.train_op = optimizer.apply_gradients(grads_and_vars_lst)
-        # # global norm is just a norm of stack vectors
+        optimizer = tf.train.AdamOptimizer(self.lr)
+        # self.train_op = optimizer.minimize(self.loss, var_list=var_lst)
+        grads_and_vars_lst = optimizer.compute_gradients(self.loss, var_list=var_lst)
+        if self.config.grad_clip:
+            grads_clipped_and_vars_lst = []
+            for grad_and_var in grads_and_vars_lst:
+                grad, var = grad_and_var
+                grad_clipped = tf.clip_by_norm(grad, self.config.clip_val)
+                grads_clipped_and_vars_lst.append((grad_clipped, var))
+            self.train_op = optimizer.apply_gradients(grads_clipped_and_vars_lst)
+        else:
+            self.train_op = optimizer.apply_gradients(grads_and_vars_lst)
+        # global norm is just a norm of stack vectors
         self.grad_norm = tf.global_norm(var_lst)
         ##############################################################
         ######################## END YOUR CODE #######################
