@@ -114,29 +114,17 @@ class Linear(DQN):
         # state_shape = list(self.env.observation_space.shape)
         _, img_height, img_width, nchannels = state.shape
         state_flat_dim = img_height * img_width * nchannels
-        if scope == "target_q":
-            with tf.variable_scope(scope, reuse=reuse):
-                batch_state = tf.reshape(state, [-1, state_flat_dim])
-                W = tf.get_variable(
-                    "weights",
-                    shape=(state_flat_dim, num_actions)
-                )
-                tf.add_to_collection("target_q", W)
-                b = tf.get_variable("bias", shape=(num_actions))
-                tf.add_to_collection("target_q", b)
-                out = tf.matmul(batch_state, W) + b
-        elif scope == "q":
-            with tf.variable_scope(scope, reuse=reuse):
-                batch_state = tf.reshape(state, [-1, state_flat_dim])
-                W = tf.get_variable(
-                    "weights",
-                    shape=(state_flat_dim, num_actions))
-                tf.add_to_collection("q", W)
-                b = tf.get_variable("bias", shape=(num_actions))
-                tf.add_to_collection("q", b)
-                out = tf.matmul(batch_state, W) + b
-        else:
-            raise ValueError('scope value is wrong')
+        with tf.variable_scope(scope, reuse=reuse):
+            batch_state = tf.reshape(state, [-1, state_flat_dim])
+            W = tf.get_variable(
+                "weights",
+                shape=(state_flat_dim, num_actions)
+            )
+            tf.add_to_collection(scope, W)
+            b = tf.get_variable("bias", shape=(num_actions))
+            tf.add_to_collection(scope, b)
+            out = tf.matmul(batch_state, W) + b
+
         # layers.fully_connected(batch_state, num_actions, activation_fn=None)
 
         ##############################################################
@@ -297,14 +285,16 @@ class Linear(DQN):
         var_lst = tf.get_collection(scope)
         optimizer = tf.train.AdamOptimizer(self.lr)
         # self.train_op = optimizer.minimize(self.loss, var_list=var_lst)
-        grads_and_vars_lst = optimizer.compute_gradients(self.loss, var_list=var_lst)
+        grads_and_vars_lst = optimizer.compute_gradients(
+            self.loss, var_list=var_lst)
         if self.config.grad_clip:
             grads_clipped_and_vars_lst = []
             for grad_and_var in grads_and_vars_lst:
                 grad, var = grad_and_var
                 grad_clipped = tf.clip_by_norm(grad, self.config.clip_val)
                 grads_clipped_and_vars_lst.append((grad_clipped, var))
-            self.train_op = optimizer.apply_gradients(grads_clipped_and_vars_lst)
+            self.train_op = optimizer.apply_gradients(
+                grads_clipped_and_vars_lst)
         else:
             self.train_op = optimizer.apply_gradients(grads_and_vars_lst)
         # global norm is just a norm of stack vectors

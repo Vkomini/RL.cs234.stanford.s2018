@@ -32,7 +32,7 @@ class NatureQN(Linear):
         """
         # this information might be useful
 
-        # NOTE: 
+        # NOTE:
         num_actions = self.env.action_space.n
         out = state
         ##############################################################
@@ -58,17 +58,16 @@ class NatureQN(Linear):
         ##############################################################
         ################ YOUR CODE HERE - 10-15 lines ################
         # pad to the size used in the paper: 84 x 84
-        N = self.config.batch_size
         with tf.variable_scope(scope, reuse=reuse):
 
-            batch_padded = tf.pad(state, [[0, 0], [2, 2], [2, 2], [0, 0]])
+            # batch_padded = tf.pad(state, [[0, 0], [2, 2], [2, 2], [0, 0]])
 
             layer1 = tf.contrib.layers.conv2d(
-                inputs=batch_padded,
+                inputs=state,
                 num_outputs=32,
                 kernel_size=[8, 8],
-                stride = 4,
-                padding="VALID",
+                stride=4,
+                padding="SAME",
                 activation_fn=tf.nn.relu,
                 variables_collections=scope
             )
@@ -77,8 +76,8 @@ class NatureQN(Linear):
                 inputs=layer1,
                 num_outputs=64,
                 kernel_size=[4, 4],
-                stride = 2,
-                padding="VALID",
+                stride=2,
+                padding="SAME",
                 activation_fn=tf.nn.relu,
                 variables_collections=scope
             )
@@ -87,14 +86,14 @@ class NatureQN(Linear):
                 inputs=layer2,
                 num_outputs=64,
                 kernel_size=[3, 3],
-                stride = 1,
-                padding="VALID",
+                stride=1,
+                padding="SAME",
                 activation_fn=tf.nn.relu,
                 variables_collections=scope
             )
 
             layer4 = tf.contrib.layers.fully_connected(
-                tf.reshape(layer3, [-1, 7 * 7 * 64]),
+                tf.reshape(layer3, [-1, 10 * 10 * 64]),
                 512,
                 activation_fn=tf.nn.relu,
                 variables_collections=scope
