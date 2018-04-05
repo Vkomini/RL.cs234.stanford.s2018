@@ -245,8 +245,9 @@ class Linear(DQN):
         # loss_agg = (self.r + self.config.gamma * tf.reduce_max(target_q, axis=1) \
         #           - (ones - self.done_mask) * tf.gather_nd(q, a_idx)) ** 2
         a_one_hot = tf.one_hot(self.a, depth=num_actions)
-        loss_agg = self.r + self.config.gamma * tf.reduce_max(target_q, axis=1)
-        loss_agg -= tf.reduce_sum(tf.multiply(q, a_one_hot), axis=1)
+        loss_agg = self.r + \
+          (1. - self.done_mask) * self.config.gamma * tf.reduce_max(target_q, axis=1) - \
+          tf.reduce_sum(tf.multiply(q, a_one_hot), axis=1)
         self.loss = tf.reduce_mean(loss_agg ** 2)
 
         ##############################################################
