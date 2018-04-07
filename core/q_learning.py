@@ -166,6 +166,18 @@ class QN(object):
 
         # interact with environment
         while t < self.config.nsteps_train:
+            target_q_norm = self.sess.run(self.target_q_norm)
+            q_norm = self.sess.run(self.q_norm)
+
+            # print(' -- target_q norm: ' + str(target_q_norm))
+            # print(' -- q norm: ' + str(q_norm))
+            # if target_q_norm == q_norm:
+            #     print('-' * 20)
+            #     print("q net updated")
+            #     print('episode: ' + str(t))
+            #     print('-' * 20)
+            #     raw_input()
+
             total_reward = 0
             state = self.env.reset()
             while True:

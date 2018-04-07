@@ -61,7 +61,7 @@ class Linear(DQN):
             shape=(None, img_height, img_width,
                    nchannels * config.state_history)
         )
-        self.a = tf.placeholder(tf.uint8, shape=None)
+        self.a = tf.placeholder(tf.int32, shape=None)
         self.r = tf.placeholder(tf.float32, shape=None)
         self.sp = tf.placeholder(
             tf.uint8,
@@ -173,8 +173,28 @@ class Linear(DQN):
         # collect variables and assign ops
         # tensorflow guarantees the order of variables in collections
         # is the same as they were added to collections
-        target_q_var_lst = tf.get_collection(target_q_scope)
-        q_var_lst = tf.get_collection(q_scope)
+        target_q_var_lst = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, target_q_scope)
+
+        # print('-' * 20)
+        # print(' -- target q')
+        # print(len(target_q_var_lst))
+        # for var in target_q_var_lst:
+            # print(' -- ' + var.name)
+        # print('-' * 20)
+
+        q_var_lst = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, q_scope)
+
+        # print('-' * 20)
+        # print(' -- q')
+        # print(len(q_var_lst))
+
+        # for var in q_var_lst:
+            # print(' -- ' + var.name)
+        # print('-' * 20)
+
+        assert len(target_q_var_lst) == len(target_q_var_lst), \
+          "q and target_q variable list len mismatch"
+
         update_op_lst = []
         for idx, target_q_var in enumerate(target_q_var_lst):
             op = target_q_var.assign(q_var_lst[idx])
@@ -283,7 +303,13 @@ class Linear(DQN):
         """
         ##############################################################
         #################### YOUR CODE HERE - 8-12 lines #############
-        var_lst = tf.get_collection(scope)
+        var_lst = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope=scope)
+        
+        # print('-' * 20)
+        # for var in var_lst:
+        	# print(' -- ' + var.name)
+        # print('-' * 20)
+
         optimizer = tf.train.AdamOptimizer(self.lr)
         # self.train_op = optimizer.minimize(self.loss, var_list=var_lst)
         grads_and_vars_lst = optimizer.compute_gradients(
@@ -303,6 +329,10 @@ class Linear(DQN):
 
         # global norm is just a norm of stack vectors
         self.grad_norm = tf.global_norm(grads_lst)
+        var_lst = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='target_q')
+        self.target_q_norm = tf.global_norm(var_lst)
+        var_lst = tf.get_collection(tf.GraphKeys.TRAINABLE_VARIABLES, scope='q')
+        self.q_norm = tf.global_norm(var_lst)
         ##############################################################
         ######################## END YOUR CODE #######################
 

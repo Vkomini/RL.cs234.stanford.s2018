@@ -1,5 +1,5 @@
 import tensorflow as tf
-# import tensorflow.layers as layers
+import tensorflow.contrib.layers as layers
 
 from utils.general import get_logger
 from utils.test_env import EnvTest
@@ -59,27 +59,22 @@ class NatureQN(Linear):
         ################ YOUR CODE HERE - 10-15 lines ################
         # pad to the size used in the paper: 84 x 84
         with tf.variable_scope(scope, reuse=reuse):
-
             # batch_padded = tf.pad(state, [[0, 0], [2, 2], [2, 2], [0, 0]])
-
             layer1 = tf.contrib.layers.conv2d(
                 inputs=state,
                 num_outputs=32,
                 kernel_size=[8, 8],
                 stride=4,
                 padding="SAME",
-                activation_fn=tf.nn.relu,
-                variables_collections=scope
-            )
-
+                activation_fn=tf.nn.relu
+                )
             layer2 = tf.contrib.layers.conv2d(
                 inputs=layer1,
                 num_outputs=64,
                 kernel_size=[4, 4],
                 stride=2,
                 padding="SAME",
-                activation_fn=tf.nn.relu,
-                variables_collections=scope
+                activation_fn=tf.nn.relu
             )
 
             layer3 = tf.contrib.layers.conv2d(
@@ -88,22 +83,17 @@ class NatureQN(Linear):
                 kernel_size=[3, 3],
                 stride=1,
                 padding="SAME",
-                activation_fn=tf.nn.relu,
-                variables_collections=scope
+                activation_fn=tf.nn.relu
             )
-
             layer4 = tf.contrib.layers.fully_connected(
                 tf.reshape(layer3, [-1, 10 * 10 * 64]),
                 512,
-                activation_fn=tf.nn.relu,
-                variables_collections=scope
+                activation_fn=tf.nn.relu
             )
-
             layer5 = tf.contrib.layers.fully_connected(
                 layer4,
                 num_actions,
-                activation_fn=None,
-                variables_collections=scope
+                activation_fn=None
             )
             out = layer5
 
