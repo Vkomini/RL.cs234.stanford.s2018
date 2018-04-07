@@ -296,10 +296,13 @@ class Linear(DQN):
                 grads_clipped_and_vars_lst.append((grad_clipped, var))
             self.train_op = optimizer.apply_gradients(
                 grads_clipped_and_vars_lst)
+            grads_lst = [x[0] for x in grads_clipped_and_vars_lst]
         else:
             self.train_op = optimizer.apply_gradients(grads_and_vars_lst)
+            grads_lst = [x[0] for x in grads_and_vars_lst]
+
         # global norm is just a norm of stack vectors
-        self.grad_norm = tf.global_norm(var_lst)
+        self.grad_norm = tf.global_norm(grads_lst)
         ##############################################################
         ######################## END YOUR CODE #######################
 
