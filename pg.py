@@ -54,12 +54,12 @@ def build_mlp(
     with tf.variable_scope(scope):
         x = mlp_input
         for layer in range(n_layers):
-            y = tf.layers.dense(x, size, activation=tf.nn.relu)
+            y = tf.layers.dense(x, size, activation=tf.nn.relu,
+                                kernel_initializer=tf.contrib.layers.xavier_initializer())
             x = y
 
-        y = tf.layers.dense(x, output_size, activation=output_activation)
-
-
+        y = tf.layers.dense(x, output_size, activation=tf.nn.relu,
+                                kernel_initializer=tf.contrib.layers.xavier_initializer())
     return y
     #######################################################
     #########          END YOUR CODE.          ############
@@ -131,7 +131,7 @@ class PG(object):
                                                      shape=(None,) + self.action_dim)
 
         # Define a placeholder for advantages
-        self.advantage_placeholder =  tf.placeholder(tf.float32, shape=(None,))
+        self.advantage_placeholder = tf.placeholder(tf.float32, shape=(None,))
         #######################################################
         #########          END YOUR CODE.          ############
 
@@ -182,23 +182,22 @@ class PG(object):
             action_logits = build_mlp(
                 self.observation_placeholder,
                 self.action_dim,
-                'policy_net',
+                scope,
                 n_layers=self.config.n_layers,
                 size=self.config.layer_size,
-                output_activation=None
+                output_activation=self.config.activation
             )
-            self.sampled_action = tf.reshape(
-                tf.multinomial(action_logits, 1),
-                (-1,)
-            )
+            self.action_logits = action_logits
+            self.sampled_action = tf.squeeze(tf.multinomial(action_logits, 1))
+            self.argmax_logits = tf.argmax(action_logits, axis=1)
             self.logprob = - tf.nn.sparse_softmax_cross_entropy_with_logits(
                 labels=tf.argmax(action_logits, axis=1),
                 logits=action_logits)
         else:
-            action_means = build_mlp(
+            self.action_means = build_mlp(
                 self.observation_placeholder,
                 self.action_dim,
-                'policy_net',
+                'scope',
                 n_layers=config.n_layers,
                 size=config.layer_size,
                 output_activation=None)
@@ -233,7 +232,8 @@ class PG(object):
 
         ######################################################
         #########   YOUR CODE HERE - 1-2 lines.   ############
-        self.loss = self.logprob * self.advantage_placeholder
+        self.loss = self.logprob * (2. - self.advantage_placeholder)
+        self.loss = tf.reduce_mean(self.loss)
         #######################################################
         #########          END YOUR CODE.          ############
 
@@ -246,7 +246,7 @@ class PG(object):
         ######################################################
         #########   YOUR CODE HERE - 1-2 lines.   ############
         optimizer = tf.train.AdamOptimizer(self.lr)
-        self.train_op = optimizer.minimize(-self.loss)
+        self.train_op = optimizer.minimize(self.loss)
         #######################################################
         #########          END YOUR CODE.          ############
 
@@ -419,7 +419,7 @@ class PG(object):
                 states.append(state)
                 action = self.sess.run(
                     self.sampled_action,
-                    feed_dict={self.observation_placeholder: states[-1][None]})[0]
+                    feed_dict={self.observation_placeholder: states[-1][None]})
                 state, reward, done, info = env.step(action)
                 actions.append(action)
                 rewards.append(reward)
@@ -471,7 +471,7 @@ class PG(object):
                 tail_length = episode_len - time_step
                 gammas = np.logspace(0, tail_length, num=tail_length,
                                      base=self.config.gamma, endpoint=False)
-                return_t = gammas * rewards[time_step:]
+                return_t = rewards[time_step:]
                 return_t = return_t.sum()
                 path_returns.append(return_t)
             #######################################################
@@ -571,7 +571,7 @@ class PG(object):
             # run training operations
             if self.config.use_baseline:
                 self.update_baseline(returns, observations)
-            self.sess.run(self.train_op, feed_dict={
+            loss, _ = self.sess.run([self.loss, self.train_op], feed_dict={
                 self.observation_placeholder: observations,
                 self.action_placeholder: actions,
                 self.advantage_placeholder: advantages})

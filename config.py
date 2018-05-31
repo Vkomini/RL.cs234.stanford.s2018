@@ -27,8 +27,8 @@ class config():
     max_ep_len = 1000 # maximum episode length
     learning_rate = 3e-2
     gamma              = 1.0 # the discount factor
-    use_baseline = True 
-    normalize_advantage=True 
+    use_baseline = True
+    normalize_advantage=True
     # parameters for the policy and baseline models
     n_layers = 1 
     layer_size = 16 
