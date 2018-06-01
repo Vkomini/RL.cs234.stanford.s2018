@@ -187,16 +187,12 @@ class PG(object):
                 size=self.config.layer_size,
                 output_activation=self.config.activation
             )
-            self.action_logits = action_logits
             self.sampled_action = tf.squeeze(tf.multinomial(action_logits, 1))
-            self.argmax_logits = tf.argmax(action_logits, axis=1)
-            self.logprob = tf.reduce_sum(tf.one_hot(self.action_placeholder, 2) * tf.nn.softmax(self.action_logits), axis=1),
-            self.logprob = tf.log(self.logprob)
-            # self.logprob = - tf.nn.sparse_softmax_cross_entropy_with_logits(
-            #     labels=tf.argmax(action_logits, axis=1),
-            #     logits=action_logits)
+            self.logprob = - tf.nn.sparse_softmax_cross_entropy_with_logits(
+                labels=self.action_placeholder,
+                logits=action_logits)
         else:
-            self.action_means = build_mlp(
+            action_means = build_mlp(
                 self.observation_placeholder,
                 self.action_dim,
                 'scope',
@@ -210,9 +206,9 @@ class PG(object):
                 initializer=tf.uniform_unit_scaling_initializer(),
                 trainable=True
             )
-            self.sampled_action = tf.random_normal((1,), self.action_means, tf.exp(log_std))
+            self.sampled_action = tf.random_normal((1,), action_means, tf.exp(log_std))
             self.logprob = tf.contrib.distributions.MultivariateNormalDiag(
-                action_means, tf.exp(log_std)).pdf(self.action_means)
+                action_means, tf.exp(log_std)).pdf(self.action_placeholder)
         #######################################################
         #########          END YOUR CODE.          ############
 
