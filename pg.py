@@ -127,8 +127,12 @@ class PG(object):
             self.action_placeholder = tf.placeholder(tf.int32,
                                                      shape=(None,))
         else:
-            self.action_placeholder = tf.placeholder(tf.float32,
-                                                     shape=(None,) + self.action_dim)
+            if self.action_dim is 1:
+                self.action_placeholder = tf.placeholder(tf.float32,
+                                                     shape=(None,))
+            else:
+                self.action_pslaceholder = tf.placeholder(tf.float32,
+                                                     shape=(None, self.action_dim))
 
         # Define a placeholder for advantages
         self.advantage_placeholder = tf.placeholder(tf.float32, shape=(None,))
@@ -192,23 +196,31 @@ class PG(object):
                 labels=self.action_placeholder,
                 logits=action_logits)
         else:
-            action_means = build_mlp(
+            self.action_means = build_mlp(
                 self.observation_placeholder,
                 self.action_dim,
-                'scope',
+                scope,
                 n_layers=config.n_layers,
                 size=config.layer_size,
                 output_activation=None)
-            log_std = tf.get_variable(
-                'log_std',
+            self.std = tf.get_variable(
+                'std',
                 shape=[self.action_dim],
                 dtype=tf.float32,
-                initializer=tf.uniform_unit_scaling_initializer(),
+                initializer=tf.zeros_initializer(),
                 trainable=True
             )
-            self.sampled_action = tf.random_normal((1,), action_means, tf.exp(log_std))
-            self.logprob = tf.contrib.distributions.MultivariateNormalDiag(
-                action_means, tf.exp(log_std)).pdf(self.action_placeholder)
+            self.log_std = tf.log(self.std)
+            self.sampled_action = tf.random_normal((1,), self.action_means, self.std)
+            self.sampled_action = tf.squeeze(self.sampled_action)
+            # self.sampled_action = tf.clip_by_value(self.sampled_action,
+            #                                        env.action_space.low[0],
+            #                                        env.action_space.high[0]
+            #                                        )
+            self.dist = tf.contrib.distributions.MultivariateNormalDiag(
+                self.action_means, self.std)
+            self.logprob = self.dist.prob(self.action_placeholder)
+            self.logprob = tf.log(self.logprob)
         #######################################################
         #########          END YOUR CODE.          ############
 
@@ -415,10 +427,16 @@ class PG(object):
 
             for step in range(self.config.max_ep_len):
                 states.append(state)
+                action = 0.
+                reward = 0.
+                done = False
                 action = self.sess.run(
                     self.sampled_action,
                     feed_dict={self.observation_placeholder: states[-1][None]})
-                state, reward, done, info = env.step(action)
+                try:
+                    state, reward, done, info = env.step(action)
+                except Exception as e:
+                    pass
                 actions.append(action)
                 rewards.append(reward)
                 episode_reward += reward
