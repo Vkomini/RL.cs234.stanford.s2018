@@ -54,13 +54,9 @@ def build_mlp(
     with tf.variable_scope(scope):
         x = mlp_input
         for layer in range(n_layers):
-            y = tf.layers.dense(x, size, activation=tf.nn.relu,
-                                kernel_initializer=tf.contrib.layers.xavier_initializer())
-            x = y
-
-        y = tf.layers.dense(x, output_size, activation=tf.nn.relu,
-                                kernel_initializer=tf.contrib.layers.xavier_initializer())
-    return y
+            x = tf.layers.dense(x, size, activation=tf.nn.relu)
+        x = tf.layers.dense(x, output_size, activation=output_activation)
+    return x
     #######################################################
     #########          END YOUR CODE.          ############
 
@@ -127,12 +123,8 @@ class PG(object):
             self.action_placeholder = tf.placeholder(tf.int32,
                                                      shape=(None,))
         else:
-            if self.action_dim is 1:
-                self.action_placeholder = tf.placeholder(tf.float32,
-                                                     shape=(None,))
-            else:
-                self.action_pslaceholder = tf.placeholder(tf.float32,
-                                                     shape=(None, self.action_dim))
+            self.action_placeholder = tf.placeholder(tf.float32,
+                                                 shape=(None, self.action_dim))
 
         # Define a placeholder for advantages
         self.advantage_placeholder = tf.placeholder(tf.float32, shape=(None,))
@@ -191,7 +183,8 @@ class PG(object):
                 size=self.config.layer_size,
                 output_activation=self.config.activation
             )
-            self.sampled_action = tf.squeeze(tf.multinomial(action_logits, 1))
+            self.sampled_action = tf.multinomial(action_logits, 1)
+            self.sampled_action = tf.reshape(self.sampled_action, [-1,])
             self.logprob = - tf.nn.sparse_softmax_cross_entropy_with_logits(
                 labels=self.action_placeholder,
                 logits=action_logits)
@@ -205,22 +198,26 @@ class PG(object):
                 output_activation=None)
             self.std = tf.get_variable(
                 'std',
-                shape=[self.action_dim],
+                shape=[1, self.action_dim],
                 dtype=tf.float32,
                 initializer=tf.zeros_initializer(),
                 trainable=True
             )
-            self.log_std = tf.log(self.std)
-            self.sampled_action = tf.random_normal((1,), self.action_means, self.std)
-            self.sampled_action = tf.squeeze(self.sampled_action)
+            self.log_std = tf.log(tf.exp(self.std) + 1.)
+            self.log_std = tf.tile(self.log_std,
+                                   [tf.shape(self.action_means)[0], 1])
+            self.sampled_action = tf.random_normal((1,),
+                                                   self.action_means,
+                                                   self.log_std)
+            # self.sampled_action = tf.squeeze(self.sampled_action)
             # self.sampled_action = tf.clip_by_value(self.sampled_action,
             #                                        env.action_space.low[0],
             #                                        env.action_space.high[0]
             #                                        )
             self.dist = tf.contrib.distributions.MultivariateNormalDiag(
-                self.action_means, self.std)
+                self.action_means, self.log_std)
             self.logprob = self.dist.prob(self.action_placeholder)
-            self.logprob = tf.log(self.logprob)
+            self.logprob = self.logprob
         #######################################################
         #########          END YOUR CODE.          ############
 
@@ -432,11 +429,8 @@ class PG(object):
                 done = False
                 action = self.sess.run(
                     self.sampled_action,
-                    feed_dict={self.observation_placeholder: states[-1][None]})
-                try:
-                    state, reward, done, info = env.step(action)
-                except Exception as e:
-                    pass
+                    feed_dict={self.observation_placeholder: states[-1][None]})[0]
+                state, reward, done, info = env.step(action)
                 actions.append(action)
                 rewards.append(reward)
                 episode_reward += reward

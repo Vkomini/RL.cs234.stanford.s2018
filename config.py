@@ -22,7 +22,7 @@ class config():
 
     
     # model and training config
-    num_batches = 1000 # number of batches trained on
+    num_batches = 200 # number of batches trained on
     batch_size = 1000 # number of steps used to compute each policy update
     max_ep_len = 1000 # maximum episode length
     learning_rate = 3e-2
