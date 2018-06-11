@@ -1,4 +1,7 @@
 *.pyc
 .env/
 .idea/
-.results/
+results/
+.DS_Store
+__pycache__/
+MUJOCO_LOG.TXT
