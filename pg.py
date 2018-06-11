@@ -193,8 +193,8 @@ class PG(object):
                 self.observation_placeholder,
                 self.action_dim,
                 scope,
-                n_layers=config.n_layers,
-                size=config.layer_size,
+                n_layers=self.config.n_layers,
+                size=self.config.layer_size,
                 output_activation=None)
             self.std = tf.get_variable(
                 'std',
