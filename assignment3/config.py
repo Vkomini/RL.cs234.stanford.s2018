@@ -20,19 +20,42 @@ class config():
     record_freq = 5
     summary_freq = 1
 
+    # # default model and training config
+    # num_batches = 200 # number of batches trained on
+    # batch_size = 1000 # number of steps used to compute each policy update
+    # max_ep_len = 1000 # maximum episode length
+    # learning_rate = 3e-2
+    # gamma              = 1.0 # the discount factor
+    # use_baseline = True
+    # normalize_advantage=True
+    # # parameters for the policy and baseline models
+    # n_layers = 1
+    # layer_size = 16
+    # activation=tf.nn.relu
     
-    # model and training config
-    num_batches = 1000 # number of batches trained on
+    # model and training config for HalfCheetah-v1
+    # num_batches = 200 # number of batches trained on
+    # batch_size = 50000 # number of steps used to compute each policy update
+    # max_ep_len = 150 # maximum episode length
+    # learning_rate = 2e-3
+    # gamma              = 0.9 # the discount factor
+    # use_baseline = True
+    # normalize_advantage=True
+    # # parameters for the policy and baseline models
+    # n_layers = 2
+    # layer_size = 32
+    # activation=None
+    num_batches = 200 # number of batches trained on
     batch_size = 50000 # number of steps used to compute each policy update
-    max_ep_len = 50000 # maximum episode length
-    learning_rate = 5e-4
+    max_ep_len = 150 # maximum episode length
+    learning_rate = 0.8 / batch_size
     gamma              = 0.9 # the discount factor
     use_baseline = True
     normalize_advantage=True
     # parameters for the policy and baseline models
     n_layers = 2
     layer_size = 32
-    activation=tf.nn.relu 
+    activation=None
 
 
     # since we start new episodes for each batch
