@@ -2,3 +2,7 @@
 *.pyc
 __pychache__
 .DS_Store
+assignment1/results
+assignment2/results
+assignment2_frozen_lake/results
+assignment3/results
