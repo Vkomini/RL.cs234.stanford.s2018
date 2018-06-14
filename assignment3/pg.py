@@ -281,7 +281,7 @@ class PG(object):
         #########   YOUR CODE HERE - 4-8 lines.   ############
         self.baseline = build_mlp(
             self.observation_placeholder,
-            1, 'baseline_net', self.config.n_layers, self.config.layer_size, None)
+            1, 'baseline_net', config.n_layers, config.layer_size, None)
         self.baseline_target_placeholder = tf.placeholder(tf.float32, shape=(None,))
         loss = tf.losses.mean_squared_error(self.baseline_target_placeholder,
                                             tf.squeeze(self.baseline))

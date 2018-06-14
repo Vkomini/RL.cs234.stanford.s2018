@@ -48,12 +48,12 @@ class config():
     num_batches = 200 # number of batches trained on
     batch_size = 50000 # number of steps used to compute each policy update
     max_ep_len = 150 # maximum episode length
-    learning_rate = 0.8 / batch_size
+    learning_rate = 4e-3
     gamma              = 0.9 # the discount factor
     use_baseline = True
     normalize_advantage=True
     # parameters for the policy and baseline models
-    n_layers = 2
+    n_layers = 3
     layer_size = 32
     activation=None
 
